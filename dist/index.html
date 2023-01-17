@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/e8fbb55064.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js"></script>
+    
+    <link rel="stylesheet" href="./assets/index-ec5da7a4.css">
+  </head>
+
+  <body
+    class="font-['Kanit'] overflow-x-hidden box-border m-auto p-0 max-w-[640px]"
+  >
+    <nav
+      class="flex items-center justify-between h-10 mb-5 ml-6 mr-6 font-['Open_Sans'] z-10 mt-3"
+    >
+      <a href="#"
+        ><img
+          src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5dc9062fc19d430f6909ced7_UHLogo_standard.png"
+          alt=""
+          class="cursor-pointer h-7"
+      /></a>
+      <i
+        class="cursor-pointer fa-solid fa-bars hover:text-[#2b69ee]"
+        onclick="toggleNavbar()"
+      ></i>
+    </nav>
+    <div id="navbar" class="hidden pt-3 pb-4 m-6 text-xl">
+      <ul class="flex flex-col gap-5 ml-3">
+        <li
+          class="group hover:text-[#2b69ee] mb-3 overflow-hidden h-9 hover:overflow-visible hover:h-auto"
+        >
+          Product<i class="ml-3 fa-solid fa-angle-down"></i>
+          <ul
+            class="text-lg text-[#0e0c0ca8] font-normal m-4 group-hover:h-auto opacity-0 group-hover:opacity-100"
+          >
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Card">Card Sorting</a>
+            </li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Prototype">Prototype testing</a>
+            </li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#First">First click tests</a>
+            </li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Preference">Preference tests</a>
+            </li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Five">Five second tests</a>
+            </li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Design">Design surveys</a>
+            </li>
+          </ul>
+        </li>
+        <li class="hover:text-[#2b69ee] mt-[-1rem]">
+          <a href="#">Customers</a>
+        </li>
+        <li class="hover:text-[#2b69ee]"><a href="#">Pricing</a></li>
+        <li
+          class="hover:text-[#2b69ee] group overflow-hidden h-9 hover:overflow-visible hover:h-auto"
+        >
+          Resources<i class="ml-3 fa-solid fa-angle-down"></i>
+          <ul
+            class="text-lg text-[#0f0b0ba8] font-normal m-4 block group-hover:h-auto opacity-0 group-hover:opacity-100"
+          >
+            <li class="m-4 hover:text-[#2b69ee]"><a href="#Blog">Blog</a></li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Example">Example</a>
+            </li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Testing">Testing guides</a>
+            </li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Help">Help center</a>
+            </li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Contace">Contace</a>
+            </li>
+            <li class="m-4 hover:text-[#2b69ee]">
+              <a href="#Careers">Careers</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="m-4 mt-[-0.25rem]">
+        <button
+          class="w-full h-10 pt-1 pb-1 mt-6 border border-blue-600 border-solid rounded-md hover:bg-[#337AB7] hover:text-white"
+        >
+          Sign in
+        </button>
+        <button
+          class="w-full h-10 pt-1 pb-1 mt-3 bg-[#337AB7] border border-blue-600 border-solid rounded-md text-white hover:bg-[#248ce0]"
+        >
+          Sign in
+        </button>
+      </div>
+    </div>
+    <section class="">
+      <div class="flex flex-row-reverse flex-wrap justify-center">
+        <img
+          src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b442d9ca51a7f5b711e6d60_home_mast-p-800.png"
+          alt=""
+          class="max-w-full w-[80vw]"
+        />
+        <div class="flex flex-col items-center justify-center m-4 gap-y-5">
+          <p class="text-3xl text-center">Design Confidently.</p>
+          <p class="text-center">
+            UsabilityHub is a remote user research platform that takes the
+            guesswork out of design decisions by validating them with real
+            users.
+          </p>
+          <button
+            class="w-5/6 p-3 bg-[#337AB7] rounded-md hover:bg-[#248ce0] text-white"
+          >
+            Get started
+          </button>
+        </div>
+        <div class="mt-4 ml-6 mr-6">
+          <p class="font-medium text-left">
+            The world's best companies rely on UsabilityHub to make better
+            design decisions.
+          </p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-4 m-4">
+          <img
+            src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e726a0fccf7d78d81585_logo_amazon.png"
+            alt=""
+            class="h-10"
+          />
+          <img
+            src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e8e6b998def81a004629_logo_google.png"
+            alt=""
+            class="h-10"
+          />
+          <img
+            src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e8e6a0fccf20fed815e3_logo_taskrabbit.png"
+            alt=""
+            class="h-10"
+          />
+          <img
+            src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e8e6ee75f135fc390ab6_logo_airtable.png"
+            alt=""
+            class="h-10"
+          />
+          <img
+            src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e726c3102cf1ebf0c2c0_logo_box.png"
+            alt=""
+            class="h-10"
+          />
+          <img
+            src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5f7fda34692422757a1b3768_godaddy.svg"
+            alt=""
+            class="h-9"
+          />
+          <img
+            src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46e726a09814d84e5a21c2_logo_asana.png"
+            alt=""
+            class="h-10"
+          />
+        </div>
+        <div
+          class="flex flex-col items-center justify-center w-full gap-3 pb-2 pr-4 m-4"
+        >
+          <p class="mb-2 text-2xl text-center">
+            Your user research Swiss Army Knife
+          </p>
+          <button
+            class="pt-2 pb-2 pl-6 pr-6 border border-gray-300 border-solid rounded-md max-w-fit hover:border-blue-600 hover:text-blue-800 group"
+          >
+            See all features
+            <i
+              class="ml-2 text-blue-400 cursor-pointer fa-solid fa-arrow-right group-hover:translate-x-2"
+            ></i>
+          </button>
+        </div>
+
+        <div
+          class="flex flex-wrap items-center justify-center w-full gap-8 mt-8 ml-4 mr-4"
+        >
+          <div
+            class="flex flex-col items-center justify-center w-full gap-3 pb-2 m-4"
+          >
+            <img
+              src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/6355e6254d0d41e7d3aa16c0_card-sorting.svg"
+              alt=""
+              class="w-10"
+            />
+            <p class="text-2xl text-center">Card sorting</p>
+
+            <p class="text-center">
+              Discover how people group and label information.
+            </p>
+            <button
+              class="pt-2 pb-2 pl-6 pr-6 border border-gray-300 border-solid rounded-md group hover:border-blue-600 hover:text-blue-800"
+            >
+              Learn more
+              <i
+                class="ml-2 text-blue-400 cursor-pointer fa-solid fa-arrow-right group-hover:translate-x-2"
+              ></i>
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center w-full gap-3 pb-2 pl-2 pr-2 m-4"
+          >
+            <img
+              src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/619f1c2ab5d65ddab8ae52db_prototype-testing.svg"
+              alt=""
+              class="w-10"
+            />
+            <p class="text-2xl text-center">Prototype tests</p>
+
+            <p class="text-center">
+              Discover how people navigate your figma prototypes
+            </p>
+            <button
+              class="pt-2 pb-2 pl-6 pr-6 border border-gray-300 border-solid rounded-md group hover:border-blue-600 hover:text-blue-800"
+            >
+              Learn more
+              <i
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+              ></i>
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center w-full gap-3 pb-2 pl-2 pr-2 m-4"
+          >
+            <img
+              src="https://assets-global.website-files.com/6101f41d07abfab7b5f57c84/6101f41d07abfa81f8f57cde_click-analysis.svg"
+              alt=""
+              class="w-10"
+            />
+            <p class="text-2xl text-center">First click tests</p>
+
+            <p class="text-center">
+              Test interaction with first click and navigation tests.
+            </p>
+            <button
+              class="pt-2 pb-2 pl-6 pr-6 border border-gray-300 border-solid rounded-md group hover:border-blue-600 hover:text-blue-800"
+            >
+              Learn more
+              <i
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+              ></i>
+            </button>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center w-full gap-3 pb-2 pl-2 pr-2 m-4"
+          >
+            <img
+              src="https://assets-global.website-files.com/6101f41d07abfab7b5f57c84/6101f41d07abfa567af57cc3_surveys.svg"
+              alt=""
+              class="w-10"
+            />
+            <p class="text-2xl text-center">Design surveys</p>
+
+            <p class="text-center">
+              Get feedback on images, videos or audio files.
+            </p>
+            <button
+              class="pt-2 pb-2 pl-6 pr-6 border border-gray-300 border-solid rounded-md group hover:border-blue-600 hover:text-blue-800"
+            >
+              Learn more
+              <i
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+              ></i>
+            </button>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center w-full gap-3 pb-2 pl-2 pr-2 m-4"
+          >
+            <img
+              src="https://assets-global.website-files.com/6101f41d07abfab7b5f57c84/6101f41d07abfa0fd5f57cd6_Head%20icon.svg"
+              alt=""
+              class="w-10"
+            />
+            <p class="text-2xl text-center">Preference tests</p>
+
+            <p class="text-center">
+              Find out which designs users prefer and why.
+            </p>
+            <button
+              class="pt-2 pb-2 pl-6 pr-6 border border-gray-300 border-solid rounded-md group hover:border-blue-600 hover:text-blue-800"
+            >
+              Learn more
+              <i
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+              ></i>
+            </button>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center w-full gap-3 pb-2 pl-2 pr-2 m-4"
+          >
+            <img
+              src="https://assets-global.website-files.com/6101f41d07abfab7b5f57c84/6101f41d07abfaefeaf57cd8_five-second-test.svg"
+              alt=""
+              class="w-10"
+            />
+            <p class="text-2xl text-center">Five second tests</p>
+
+            <p class="text-center">
+              Test comprehensibility by measuring first impressions.
+            </p>
+            <button
+              class="pt-2 pb-2 pl-6 pr-6 border border-gray-300 border-solid rounded-md group hover:border-blue-600 hover:text-blue-800"
+            >
+              Learn more
+              <i
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex flex-wrap items-center justify-center w-full gap-8 mt-8 ml-4 mr-4"
+        >
+          <!--  border border-black border-solid -->
+          <div class="flex flex-col items-center ml-6">
+            <img
+              src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b44330a05b1ce09edcc052e_home_designer-p-1080.png"
+              alt=""
+              class="max-w-full w-[22rem] mb-8"
+            />
+            <div class="flex flex-col">
+              <h3 class="text-xl">Effortless validation for</h3>
+              <h2 class="text-2xl">Design professionals</h2>
+              <p class="">
+                Test interfaces, interaction flows, iconography and more, to
+                help you create intuitive and delightful experiences for your
+                users.
+              </p>
+              <img
+                src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b48038d33b04e2c4746784b_logo_chartmogul.png"
+                alt="ChartMogul logo"
+                class="object-contain w-[6rem] h-12 mt-4 mb-4"
+              />
+              <p class="">
+                The navigation test is god's gift to UI designers, it probably
+                has the best power-to-simplicity ratio of any software, ever.
+              </p>
+              <div class="flex flex-row items-center mt-2 ml-6">
+                <img
+                  src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b47fffe8d2f84bbe2f2d3c9_avatar_nick.png"
+                  alt=""
+                  class="mr-4 h-9 w-9"
+                />
+                <p>
+                  <span class="block text-xl">Nick Franklin</span> Chief
+                  Executive Officer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center m-6">
+            <img
+              src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b44330a6c5dba54a973c215_home_marketer-p-800.png"
+              alt=""
+              class="max-w-full w-[22rem]"
+            />
+            <div class="flex flex-col">
+              <h3 class="text-xl">Optimisation for</h3>
+              <h2 class="text-2xl">Marketers</h2>
+              <p class="">
+                Fine-tune landing pages, messaging, and creative, helping you
+                optimise conversion rates on marketing campaigns and product
+                launches.
+              </p>
+              <img
+                src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46eb27731aa104bfa613ab_logo_philips.png"
+                alt="ChartMogul logo"
+                class="object-contain w-[5rem] h-12 mt-4 mb-4"
+              />
+              <p class="">
+                We use UsabilityHub tests to help us make decisions for various
+                projects. From web and mobile design to marketing activities.
+              </p>
+              <div class="flex flex-row items-center mt-2 ml-6">
+                <img
+                  src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b47fffec57559f4aad75acd_avatar_rick.png"
+                  alt=""
+                  class="w-10 h-10 mr-4"
+                />
+                <p>
+                  <span class="block text-xl">Rick van de Ven</span> Chief
+                  Digital Marketing Analyst
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center m-6">
+            <img
+              src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b44330a049e86cae8ae66e5_home_manager-p-800.png"
+              alt=""
+              class="max-w-full w-[22rem]"
+            />
+            <div class="flex flex-col">
+              <h3 class="text-xl">Easier decision making for</h3>
+              <h2 class="text-2xl">Product managers</h2>
+              <p class="">
+                Ensure you’re delivering the right features to the right
+                customers by validating product concepts with your target
+                audience.
+              </p>
+              <img
+                src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b46f218731aa104eea61880_logo_economist.png"
+                alt="ChartMogul logo"
+                class="object-contain w-[8rem] h-12 mt-4 mb-4"
+              />
+              <p class="">
+                Adopting UsabilityHub got us into the habit of asking our users
+                questions before locking in decisions.
+              </p>
+              <div class="flex flex-row items-center mt-2 ml-6">
+                <img
+                  src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b47ffff33b04ea98d467523_avatar_ron.png"
+                  alt=""
+                  class="w-10 h-10 mr-4"
+                />
+                <p>
+                  <span class="block text-xl">Ron Diorio </span> VP Innovation &
+                  New Products
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center w-full gap-3 pb-2 pr-4 m-4 mt-8"
+        >
+          <p class="mb-2 text-4xl text-center">
+            One platform, endless possibilities
+          </p>
+          <button
+            class="pt-2 pb-2 pl-6 pr-6 border border-gray-300 border-solid rounded-md max-w-fit hover:border-blue-600 hover:text-blue-800"
+          >
+            See more examples
+            <i
+              class="ml-2 text-blue-400 cursor-pointer fa-solid fa-arrow-right"
+            ></i>
+          </button>
+        </div>
+        <!-- section start -->
+        <div
+          class="grid auto-cols-[minmax(260px,_2fr)] grid-flow-row w-full m-4 gap-6"
+        >
+          <div
+            class="block bg-[url('https://assets-global.website-files.com/5b29b478056829d173e3e394/5b48591a238eb6563b4d3581_cover_tasks.jpg')] bg-[#22222285] object-cover bg-cover bg-bottom min-h-[200px] min-w-[200px] bg-blend-overlay rounded-sm m-1"
+          >
+            <p
+              class="min-w-[200px] relative z-2 text-2xl text-white left-5 top-28 right-5 mr-4 mt-1"
+            >
+              Can users complete a task in my software interface?
+            </p>
+          </div>
+          <div
+            class="block bg-[url('https://assets-global.website-files.com/5b29b478056829d173e3e394/5b48581f238eb652d84d356f_cover_navigate.jpg')] bg-[#22222285] object-cover bg-cover bg-bottom min-h-[200px] min-w-[200px] bg-blend-overlay rounded-sm m-1"
+          >
+            <p
+              class="min-w-[200px] relative z-2 text-2xl text-white left-5 top-28 right-5 mr-4 mt-1"
+            >
+              Can users find importent pages on my website?
+            </p>
+          </div>
+          <div
+            class="block bg-[url('https://assets-global.website-files.com/5b29b478056829d173e3e394/5b485751238eb68a594d3555_cover_audience.jpg')] bg-[#22222285] object-cover bg-cover bg-bottom min-h-[200px] min-w-[200px] bg-blend-overlay rounded-sm m-1"
+          >
+            <p
+              class="min-w-[200px] relative z-2 text-2xl text-white left-5 top-28 right-5 mr-4 mt-1"
+            >
+              Is my Website's intended audiance claer?
+            </p>
+          </div>
+          <div
+            class="block bg-[url('https://assets-global.website-files.com/5b29b478056829d173e3e394/5b48587a238eb690dd4d3577_cover_about.jpg')] bg-[#22222285] object-cover bg-cover bg-bottom min-h-[200px] min-w-[200px] bg-blend-overlay rounded-sm m-1"
+          >
+            <p
+              class="min-w-[200px] relative z-2 text-2xl text-white left-5 top-28 right-5 mr-4 mt-1"
+            >
+              Do visitors understand what page is about?
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-around p-4 m-4 mb-8 text-center"
+        >
+          <h2 class="m-4 mb-10 text-4xl">Start testing today</h2>
+          <p class="mb-8 text-base">
+            Take the guesswork out of design decisions
+          </p>
+          <button
+            class="w-40 p-4 bg-[#337AB7] rounded-md hover:bg-[#248ce0] text-white"
+          >
+            Get started
+          </button>
+        </div>
+        <!-- section end-->
+      </div>
+      <!-- footer start-->
+      <footer class="">
+        <div
+          class="flex flex-col items-center justify-center text-center bg-[#2c3d2223] w-full pt-20 pb-16 font-sans"
+        >
+          <div>
+            <a href="#"
+              ><img
+                src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5dc9062fc19d430f6909ced7_UHLogo_standard.png"
+                alt=""
+                class="h-8 mt-6 mb-6 cursor-pointer"
+            /></a>
+          </div>
+
+          <div class="m-4">
+            <ul class="text-lg text-[#0e0c0ca8] font-sans font-normal">
+              <li class="text-[#0e0c0ce0] text-2xl font-semibold">Product</li>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">UsablityHub panel</a></li>
+              <li><a href="#">Customers</a></li>
+              <li><a href="#">Status page</a></li>
+              <li><a href="#">Sign up</a></li>
+              <li><a href="#">Book a demo</a></li>
+            </ul>
+          </div>
+          <div class="m-4">
+            <ul class="text-lg text-[#0e0c0ca8] font-normal">
+              <li class="text-[#0e0c0ce0] text-2xl font-semibold">
+                Methodologies
+              </li>
+              <li><a href="#">Card Sorting</a></li>
+              <li><a href="#">Prototype testing</a></li>
+              <li><a href="#">First click tests</a></li>
+              <li><a href="#">Preference tests</a></li>
+              <li><a href="#">Five second tests</a></li>
+              <li><a href="#">Design surveys</a></li>
+            </ul>
+          </div>
+          <div class="m-4">
+            <ul class="text-lg text-[#0e0c0ca8] font-normal">
+              <li class="text-[#0e0c0ce0] text-2xl">Resources</li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Example</a></li>
+              <li><a href="#">Testing guides</a></li>
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-[#0023be6b] w-full pt-8 pb-6">
+          <div class="m-4">
+            <ul
+              class="flex flex-col items-center justify-center gap-4 text-[#0e0c0ca8]"
+            >
+              <li><a href="#" class="">Privacy policy</a></li>
+              <li><a href="#" class="">Terms & condition</a></li>
+              <li><a href="#" class="">Security information</a></li>
+            </ul>
+          </div>
+          <div
+            class="flex flex-row items-center justify-center h-12 max-w-xs gap-5 m-auto"
+          >
+            <div class="h-12">
+              <i class="fa-brands fa-square-facebook fa-2x"></i>
+            </div>
+            <div class="h-12">
+              <i class="fa-brands fa-twitter fa-2x"></i>
+            </div>
+            <div class="h-12">
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+            </div>
+            <div class="h-12">
+              <i class="fa-brands fa-youtube fa-2x"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end-->
+    </section>
+    
+  </body>
+</html>
