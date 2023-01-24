@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <script src="./script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles.css">
   </head>
 
@@ -37,14 +38,14 @@
         onclick="toggleNavbar()"
       ></i>
     </nav>
-    <div id="navbar" class="hidden pt-3 pb-4 m-6 text-xl">
+    <div id="navbar" class="hidden pt-3 pb-4 m-6 text-xl ">
       <ul class="flex flex-col gap-5 ml-3">
         <li
           class="group hover:text-[#2b69ee] mb-3 overflow-hidden h-9 hover:overflow-visible hover:h-auto"
         >
           Product<i class="ml-3 fa-solid fa-angle-down"></i>
           <ul
-            class="text-lg text-[#0e0c0ca8] font-normal m-4 group-hover:h-auto opacity-0 group-hover:opacity-100"
+            class="text-lg text-[#0e0c0ca8] font-normal m-4 h-[0px] overflow-hidden transition-[height] ease-in-out delay-[50ms] group-hover:h-[14rem]"
           >
             <li class="m-4 hover:text-[#2b69ee]">
               <a href="#Card">Card Sorting</a>
@@ -75,7 +76,7 @@
         >
           Resources<i class="ml-3 fa-solid fa-angle-down"></i>
           <ul
-            class="text-lg text-[#0f0b0ba8] font-normal m-4 block group-hover:h-auto opacity-0 group-hover:opacity-100"
+            class="text-lg text-[#0e0c0ca8] font-normal m-4 h-[0px] overflow-hidden transition-[height] ease-in-out delay-[50ms] group-hover:h-[14rem]"
           >
             <li class="m-4 hover:text-[#2b69ee]"><a href="#Blog">Blog</a></li>
             <li class="m-4 hover:text-[#2b69ee]">
@@ -114,7 +115,8 @@
         <img
           src="https://assets-global.website-files.com/5af97a9c84ec1bc79d81b5f4/5b442d9ca51a7f5b711e6d60_home_mast-p-800.png"
           alt=""
-          class="max-w-full w-[80vw]"
+          class="max-w-full w-[80vw] "
+          id="toggleIMG"
         />
         <div class="flex flex-col items-center justify-center m-4 gap-y-5">
           <p class="text-3xl text-center">Design Confidently.</p>
@@ -183,7 +185,7 @@
           >
             See all features
             <i
-              class="ml-2 text-blue-400 cursor-pointer fa-solid fa-arrow-right group-hover:translate-x-2"
+              class="ml-2 text-blue-400 cursor-pointer fa-solid fa-arrow-right transition delay-[50ms] ease-in-outgroup-hover:translate-x-2"
             ></i>
           </button>
         </div>
@@ -209,7 +211,7 @@
             >
               Learn more
               <i
-                class="ml-2 text-blue-400 cursor-pointer fa-solid fa-arrow-right group-hover:translate-x-2"
+                class="ml-2 text-blue-400 cursor-pointer fa-solid fa-arrow-right transition delay-[50ms] ease-in-out group-hover:translate-x-2"
               ></i>
             </button>
           </div>
@@ -231,7 +233,7 @@
             >
               Learn more
               <i
-                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right transition delay-[50ms] ease-in-out"
               ></i>
             </button>
           </div>
@@ -253,7 +255,7 @@
             >
               Learn more
               <i
-                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right transition delay-[50ms] ease-in-out"
               ></i>
             </button>
           </div>
@@ -276,7 +278,7 @@
             >
               Learn more
               <i
-                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right transition delay-[50ms] ease-in-out"
               ></i>
             </button>
           </div>
@@ -299,7 +301,7 @@
             >
               Learn more
               <i
-                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right transition delay-[50ms] ease-in-out"
               ></i>
             </button>
           </div>
@@ -322,7 +324,7 @@
             >
               Learn more
               <i
-                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right"
+                class="ml-2 text-blue-400 cursor-pointer group-hover:translate-x-2 fa-solid fa-arrow-right transition delay-[50ms] ease-in-out"
               ></i>
             </button>
           </div>
@@ -452,7 +454,7 @@
           >
             See more examples
             <i
-              class="ml-2 text-blue-400 cursor-pointer fa-solid fa-arrow-right"
+              class="ml-2 text-blue-400 cursor-pointer fa-solid fa-arrow-right transition delay-[50ms] ease-in-out"
             ></i>
           </button>
         </div>
@@ -576,16 +578,16 @@
           <div
             class="flex flex-row items-center justify-center h-12 max-w-xs gap-5 m-auto"
           >
-            <div class="h-12">
+            <div class="h-12 cursor-pointer opacity-80 hover:opacity-100">
               <i class="fa-brands fa-square-facebook fa-2x"></i>
             </div>
-            <div class="h-12">
+            <div class="h-12 cursor-pointer opacity-80 hover:opacity-100">
               <i class="fa-brands fa-twitter fa-2x"></i>
             </div>
-            <div class="h-12">
+            <div class="h-12 cursor-pointer opacity-80 hover:opacity-100">
               <i class="fa-brands fa-linkedin fa-2x"></i>
             </div>
-            <div class="h-12">
+            <div class="h-12 cursor-pointer opacity-80 hover:opacity-100">
               <i class="fa-brands fa-youtube fa-2x"></i>
             </div>
           </div>
